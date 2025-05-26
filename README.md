@@ -17,7 +17,7 @@ This project is the board game "Splendor" developed for the course "Software Eng
 ## Installation
 1. Download [javafx_lib.zip](https://github.com/youruser/repo/releases/download/v1.0/javafx_lib.zip)
 2. Unzip it into the project directory
-3Run
+3. Run
 ```
 mvn clean install
 ```
