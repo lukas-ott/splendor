@@ -15,13 +15,13 @@ This project is the board game "Splendor" developed for the course "Software Eng
 2. Maven is installed (to compile jars)
 
 ## Installation
-1. Download [javafx_lib.zip](https://github.com/youruser/repo/releases/download/v1.0.0/javafx_lib.zip)
+1. Download [javafx_lib.zip](https://github.com/lukas-ott/splendor/releases/download/Alpha/javafx_lib.zip)
 2. Unzip it into the project directory
 3. Run
 ```
 mvn clean install
 ```
-Refer to the UserManual in the docs for more info on how to run the game and network play. (Use the commands below)
+Refer to the file docs/other_artefacts/User Manual.md for more information on how to run the game and network play. (Use the commands below)
 
 ## Running the jars
 ### Start the server (all OSs)
