@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="525.0" prefWidth="1081.0" style="-fx-pref-width: 1280; -fx-max-width: 1280; -fx-pref-height: 720; -fx-max-height: 720;" xmlns="http://javafx.com/javafx/21.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.spl12.client.application.HomeScreenController">
+    <children>
+        <ImageView fitHeight="720.0" fitWidth="1283.0" mouseTransparent="true">
+            <image>
+                <Image url="@../images/backgrounds/hallway.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="189.0" layoutY="307.0" prefHeight="48.0" prefWidth="313.0" text="Singleplayer" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="Songti SC Black" size="32.0" />
+            </font>
+            <effect>
+                <DropShadow height="100.0" offsetX="10.0" radius="49.5" spread="0.5" width="100.0" />
+            </effect>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Label>
+        <Button fx:id="nametag" alignment="CENTER" layoutX="51.0" layoutY="16.0" mnemonicParsing="false" onAction="#profile" style="-fx-background-color: transparent;" text="Player Button" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="51.0" fitWidth="51.0">
+                    <image>
+                        <Image url="@../images/symbols/person.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="Songti SC Light" size="28.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button layoutX="1142.0" layoutY="11.0" mnemonicParsing="false" onAction="#settings" prefHeight="87.0" prefWidth="82.0" style="-fx-background-color: transparent;" text=" " textFill="WHITE">
+            <font>
+                <Font name="Songti TC Bold" size="40.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+         <graphic>
+                <ImageView fitHeight="39.0" fitWidth="40.0">
+                    <image>
+                        <Image url="@../images/symbols/settings.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+         </graphic>
+        </Button>
+      <ImageView fitHeight="41.0" fitWidth="323.0" layoutX="190.0" layoutY="531.0">
+         <image>
+            <Image url="@../images/buttons/default.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="360.0" layoutX="694.0" layoutY="531.0">
+         <image>
+            <Image url="@../images/buttons/default.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="190.0" layoutY="340.0" prefHeight="192.0" prefWidth="462.0" text="Will you hone your skills in solitude, facing silent but relentless foes—merchants of metal and code, whose minds were forged for challenge and cunning? In this path, every move is yours alone, every victory hard-earned against the quiet will of the machine." textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Songti SC Regular" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow height="100.0" offsetX="10.0" radius="49.5" spread="0.5" width="100.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label layoutX="700.0" layoutY="353.0" prefHeight="163.0" prefWidth="421.0" text="Or will you step into the grand arena of minds—where real rivals wait beyond distant lands, watching, planning, adapting? Here, no two games are the same. Here, the glory is shared... or stolen." textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Songti SC Regular" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow height="100.0" offsetX="10.0" radius="49.5" spread="0.5" width="100.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label layoutX="698.0" layoutY="307.0" prefHeight="48.0" prefWidth="313.0" text="Multiplayer" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Songti SC Black" size="32.0" />
+         </font>
+         <effect>
+            <DropShadow height="100.0" offsetX="10.0" radius="49.5" spread="0.5" width="100.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+        <Button fx:id="multiplayerButton" layoutX="694.0" layoutY="530.0" mnemonicParsing="false" onAction="#goToMultiplayerSelect" prefHeight="42.0" prefWidth="355.0" style="-fx-background-color: transparent;" text="Challenge your Friends in Multiplayer" textFill="WHITE">
+            <font>
+                <Font name="Songti SC Black" size="20.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <Label layoutX="188.0" layoutY="138.0" prefHeight="128.0" prefWidth="691.0" text="Every Adventure starts with a choice..." textFill="#fcff00" wrapText="true">
+         <font>
+            <Font name="Songti SC Black" size="40.0" />
+         </font>
+         <effect>
+            <DropShadow height="100.0" offsetX="10.0" radius="49.5" spread="0.5" width="100.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+        <Button fx:id="singleplayerButton" layoutX="187.0" layoutY="530.0" maxHeight="112.0" maxWidth="500.0" mnemonicParsing="false" onAction="#goToSingleplayerLobby" pickOnBounds="true" prefHeight="0.0" prefWidth="325.0" style="-fx-background-color: transparent;" text="Start your Singleplayer Adventure" textFill="WHITE">
+            <font>
+                <Font name="Songti SC Black" size="20.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+    </children>
+</AnchorPane>

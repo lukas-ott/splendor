@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="525.0" prefWidth="1081.0" style="-fx-pref-width: 1280; -fx-max-width: 1280; -fx-pref-height: 720; -fx-max-height: 720;" xmlns="http://javafx.com/javafx/21.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.spl12.client.application.ProfileScreenController">
+            <children>
+                <ImageView fitHeight="720.0" fitWidth="1283.0">
+                    <image>
+                        <Image url="@../images/backgrounds/hallway.png" />
+                    </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+                </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="200.0" layoutX="539.0" layoutY="590.0">
+         <image>
+            <Image url="@../images/buttons/default.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="210.0" layoutY="7.0">
+         <children>
+            <Pane layoutY="24.0">
+               <children>
+                  <Pane layoutY="59.0" prefHeight="433.0" prefWidth="885.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <ImageView fitHeight="404.0" fitWidth="562.0" layoutX="164.0" layoutY="-59.0">
+                           <image>
+                              <Image url="@../images/panels/menu.png" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="248.0" layoutY="36.0" prefHeight="265.0" prefWidth="386.0">
+                           <children>
+                                    <Text fill="WHITE" layoutX="108.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Stats">
+                                       <font>
+                                          <Font name="Songti SC Bold" size="40.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="41.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Games You Played">
+                                       <font>
+                                          <Font name="Songti SC Light" size="24.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="gamesPlayed" fill="WHITE" layoutX="256.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-origin: right; -fx-text-alignment: right;" text="10" textAlignment="RIGHT" wrappingWidth="87.45307847262666">
+                                       <font>
+                                          <Font name="Songti SC Bold" size="35.0" />
+                                       </font>
+                                    </Text>
+                              <Text fill="WHITE" layoutX="38.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Games You Won">
+                                 <font>
+                                    <Font name="Songti SC Light" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="40.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Favorite Token">
+                                 <font>
+                                    <Font name="Songti SC Light" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="favoriteToken" fill="WHITE" layoutX="243.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-origin: right; -fx-text-alignment: right;" text="Color" textAlignment="RIGHT" wrappingWidth="98.1893081665039">
+                                 <font>
+                                    <Font name="Songti SC Bold" size="35.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="gamesWon" fill="WHITE" layoutX="226.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-origin: right; -fx-text-alignment: right;" text="11" textAlignment="RIGHT" wrappingWidth="118.58044538661204">
+                                 <font>
+                                    <Font name="Songti SC Bold" size="35.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="402.0" layoutY="-51.0">
+                                 <image>
+                                    <Image url="@../images/symbols/person.png" />
+                                 </image>
+                              </ImageView>
+                        <ImageView fitHeight="61.0" fitWidth="230.0" layoutX="209.0" layoutY="340.0">
+                           <image>
+                              <Image url="@../images/buttons/default.png" />
+                           </image>
+                        </ImageView>
+                              <Button layoutX="208.0" layoutY="341.0" mnemonicParsing="false" onAction="#changeUsername" prefHeight="61.0" prefWidth="233.0" style="-fx-background-color: transparent;" text="Change Username " textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Songti SC Regular" size="25.0" />
+                                 </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <ImageView fitHeight="61.0" fitWidth="230.0" layoutX="447.0" layoutY="340.0">
+                           <image>
+                              <Image url="@../images/buttons/default.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="451.0" layoutY="344.0" mnemonicParsing="false" onAction="#changePassword" prefHeight="57.0" prefWidth="223.0" style="-fx-background-color: transparent;" text="Change Password" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Songti SC Regular" size="25.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <ImageView fx:id="logout" fitHeight="49.0" fitWidth="59.0" layoutX="670.0" layoutY="-4.0">
+                           <image>
+                              <Image url="@../images/buttons/cancel_short.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="644.0" layoutY="-8.0" mnemonicParsing="false" onAction="#logout" prefHeight="60.0" prefWidth="107.0" style="-fx-background-color: transparent;">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="28.0">
+                                 <image>
+                                    <Image url="@../images/symbols/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="61.0" fitWidth="471.0" layoutX="205.5" layoutY="467.0">
+                     <image>
+                        <Image url="@../images/buttons/cancel.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="215.5" layoutY="471.0" mnemonicParsing="false" onAction="#delete" prefHeight="48.0" prefWidth="454.0" style="-fx-background-color: transparent;" text="Delete Account" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Songti SC Regular" size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+                <Button layoutX="549.0" layoutY="582.0" mnemonicParsing="false" onAction="#back" prefHeight="78.0" prefWidth="180.0" style="-fx-background-color: transparent;" text="Back" textFill="WHITE">
+                    <font>
+                        <Font name="Songti SC Black" size="28.0" />
+                    </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+                </Button>
+      <Text fx:id="loginname" fill="WHITE" layoutX="1083.0" layoutY="664.0" strokeType="OUTSIDE" strokeWidth="0.0" text="signed in as: noynoy">
+         <font>
+            <Font name="Songti SC Regular" size="13.0" />
+         </font>
+      </Text>
+            </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

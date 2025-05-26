@@ -1,0 +1,6 @@
+darkgreen = #005f00
+darkred = #8b0000
+transparent = none
+black = #000000
+white = #ffffff
+gold = #d4af37

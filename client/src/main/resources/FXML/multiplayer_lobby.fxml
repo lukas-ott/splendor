@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="525.0" prefWidth="1081.0" style="-fx-pref-width: 1280; -fx-max-width: 1280; -fx-pref-height: 720; -fx-max-height: 720;" xmlns="http://javafx.com/javafx/21.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.spl12.client.application.MultiplayerLobbyScreenController">
+    <children>
+        <ImageView fitHeight="720.0" fitWidth="1283.0" mouseTransparent="true">
+            <image>
+                <Image url="@../images/backgrounds/lobby_background.png" />
+            </image>
+        </ImageView>
+      <Pane layoutX="167.0" layoutY="216.0" prefHeight="249.0" prefWidth="963.0">
+         <children>
+            <Pane fx:id="player2" opacity="0.5" translateX="246.0">
+               <children>
+                  <ImageView fitHeight="169.0" fitWidth="169.0" layoutX="15.0">
+                     <image>
+                        <Image url="@../images/characters/big/character_big_red.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="200.0" layoutY="156.0">
+                     <image>
+                        <Image url="@../images/characters/name_tags/name_tag_red.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="player2_name" fill="WHITE" layoutX="4.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="190.54632568359375">
+                     <font>
+                        <Font name="Songti SC Black" size="22.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Text>
+               </children>
+               <effect>
+                  <SepiaTone level="0.6" />
+               </effect>
+            </Pane>
+            <Pane fx:id="player1" disable="true">
+               <children>
+                  <ImageView fitHeight="170.0" fitWidth="166.0" layoutX="14.0">
+                     <image>
+                        <Image url="@../images/characters/big/character_big_blue.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="200.0" layoutY="156.0">
+                     <image>
+                        <Image url="@../images/characters/name_tags/name_tag_blue.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="player1_name" fill="WHITE" layoutX="5.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="190.54632568359375">
+                     <font>
+                        <Font name="Songti SC Black" size="22.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Text>
+               </children>
+               <effect>
+                  <SepiaTone level="0.0" />
+               </effect>
+            </Pane>
+            <Pane fx:id="player3" disable="true" opacity="0.5" translateX="492.0" translateY="10.0">
+               <children>
+                  <ImageView fitHeight="159.0" fitWidth="159.0" layoutX="29.0" layoutY="2.0">
+                     <image>
+                        <Image url="@../images/characters/big/character_big_orange.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="200.0" layoutY="146.0">
+                     <image>
+                        <Image url="@../images/characters/name_tags/name_tag_orange.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="player3_name" fill="WHITE" layoutX="4.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="190.54632568359375">
+                     <font>
+                        <Font name="Songti SC Black" size="22.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Text>
+               </children>
+               <effect>
+                  <SepiaTone level="0.6" />
+               </effect>
+            </Pane>
+            <Pane fx:id="player4" opacity="0.5" translateX="738.0" translateY="8.0">
+               <children>
+                  <ImageView fitHeight="159.0" fitWidth="159.0" layoutX="34.0">
+                     <image>
+                        <Image url="@../images/characters/big/character_big_green.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="200.0" layoutY="148.0">
+                     <image>
+                        <Image url="@../images/characters/name_tags/name_tag_green.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="player4_name" fill="WHITE" layoutX="4.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="190.54632568359375">
+                     <font>
+                        <Font name="Songti SC Black" size="22.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Text>
+               </children>
+               <effect>
+                  <SepiaTone level="0.6" />
+               </effect>
+            </Pane>
+         </children>
+      </Pane>
+      <ImageView fx:id="open_chat" fitHeight="480.0" fitWidth="36.0" layoutX="1247.0" layoutY="122.0">
+         <image>
+            <Image url="@../images/player_hud/chat_button.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="open_leaderboard" fitHeight="476.0" fitWidth="43.0" layoutX="1.0" layoutY="138.0">
+         <image>
+            <Image url="@../images/player_hud/leaderboard_button.png" />
+         </image>
+      </ImageView>
+       <Pane layoutX="280.0" layoutY="42.0" prefHeight="160.0" prefWidth="320.0">
+          <children>
+             <Text fill="WHITE" layoutX="117.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP Address">
+                <font>
+                   <Font name="Songti SC Regular" size="20.0" />
+                </font>
+             </Text>
+             <Text fx:id="server_ip" fill="#fff1c9" layoutX="-115.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="127.0.0.1" textAlignment="CENTER" wrappingWidth="571.0">
+                <font>
+                   <Font name="Songti SC Black" size="68.0" />
+                </font>
+                <effect>
+                   <Bloom />
+                </effect>
+             </Text>
+          </children>
+       </Pane>
+       <Pane layoutX="680.0" layoutY="42.0" prefHeight="160.0" prefWidth="320.0">
+          <children>
+             <Text fill="WHITE" layoutX="112.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Code">
+                <font>
+                   <Font name="Songti SC Regular" size="20.0" />
+                </font>
+             </Text>
+             <Text fx:id="game_code" fill="#fff1c9" layoutX="-45.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1001" textAlignment="CENTER" wrappingWidth="411.3422088623047">
+                <font>
+                   <Font name="Songti SC Black" size="68.0" />
+                </font>
+                <effect>
+                   <Bloom />
+                </effect>
+             </Text>
+          </children>
+       </Pane>
+       <Text fx:id="wait_for_host" fill="#ffe300" layoutX="441.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Waiting for host to start game...">
+         <font>
+            <Font name="Songti SC Black" size="33.0" />
+         </font>
+      </Text>
+      <Pane fx:id="start_game" disable="true" layoutX="475.0" layoutY="520.0" visible="false">
+         <children>
+            <ImageView fitHeight="114.0" fitWidth="320.0">
+               <image>
+                  <Image url="@../images/symbols/play_button.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ffe300" layoutX="80.0" layoutY="69.02001953125" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Game">
+               <font>
+                  <Font name="Songti SC Black" size="33.0" />
+               </font>
+            </Text>
+            <Button layoutX="23.0" layoutY="21.0" mnemonicParsing="false" onAction="#startGame" prefHeight="72.0" prefWidth="276.0" style="-fx-background-color: none;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Text fill="#dadada" layoutX="605.0" layoutY="647.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leave Lobby">
+         <font>
+            <Font name="Songti SC Black" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.51" />
+         </effect>
+      </Text>
+      <Button layoutX="598.0" layoutY="629.0" mnemonicParsing="false" onAction="#exit_lobby" prefHeight="26.0" prefWidth="89.0" style="-fx-background-color: none;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1241.0" layoutY="126.0" mnemonicParsing="false" onAction="#openChat" prefHeight="480.0" prefWidth="42.0" style="-fx-background-color: none;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="3.0" layoutY="129.0" mnemonicParsing="false" onAction="#openLeaderboard" prefHeight="480.0" prefWidth="42.0" style="-fx-background-color: none;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane fx:id="chat" visible="false">
+         <children>
+            <ImageView fitHeight="718.0" fitWidth="1313.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/panels/Chat.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="messageField" layoutX="376.0" layoutY="518.0" maxHeight="10.0" maxWidth="-Infinity" minWidth="0.0" prefHeight="0.0" prefWidth="473.0" promptText="Enter your message..." style="-fx-background-color: none; -fx-border-color: #432700; -fx-border-width: 2; -fx-border-radius: 4; -fx-padding: 0 0 0 10; -fx-text-fill: #543100; -fx-prompt-text-fill: #6e4205;">
+               <font>
+                  <Font name="Songti SC Black" size="18.0" />
+               </font></TextField>
+            <Text fill="#432700" layoutX="381.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat" textOrigin="CENTER" wrappingWidth="190.54632568359375">
+               <font>
+                  <Font name="Songti SC Black" size="48.0" />
+               </font>
+               <effect>
+                  <Glow level="0.37" />
+               </effect>
+            </Text>
+            <ScrollPane fx:id="chatHistory" hbarPolicy="NEVER" layoutX="377.0" layoutY="262.0" prefHeight="240.0" prefWidth="573.0" style="-fx-background-color: none;" vbarPolicy="NEVER" vvalue="1.0">
+               <content>
+                  <AnchorPane prefWidth="565.0" style="-fx-background-color: none;">
+                     <children>
+                        <VBox fx:id="chat_container" alignment="BOTTOM_LEFT" layoutX="1.0" layoutY="160.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="564.0" style="-fx-background-color: none;">
+                           <children>
+                              <Text fill="#432700" strokeType="OUTSIDE" strokeWidth="0.0" text="[System] Lobby launched." wrappingWidth="563.4909284215647">
+                                 <font>
+                                    <Font name="Songti SC Bold" size="19.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Text>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <ImageView fitHeight="34.0" fitWidth="98.0" layoutX="854.0" layoutY="516.0">
+               <image>
+                  <Image url="@../images/symbols/send_icon.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="901.0" layoutY="160.0" mnemonicParsing="false" onAction="#closeChat" prefHeight="55.0" prefWidth="68.0" style="-fx-background-color: none;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fill="#432700" layoutX="869.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send" textOrigin="CENTER" wrappingWidth="80.14608250427284">
+               <font>
+                  <Font name="Songti SC Black" size="18.0" />
+               </font>
+               <effect>
+                  <Glow level="0.37" />
+               </effect>
+            </Text>
+            <Button layoutX="856.0" layoutY="520.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="26.0" prefWidth="101.0" style="-fx-background-color: none;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </Pane>
+      <Pane fx:id="leaderboard" visible="false">
+         <children>
+            <ImageView fitHeight="718.0" fitWidth="1313.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/panels/Chat.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="901.0" layoutY="160.0" mnemonicParsing="false" onAction="#closeLeaderboard" prefHeight="55.0" prefWidth="68.0" style="-fx-background-color: none;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="410.0" fitWidth="339.0" layoutX="351.0" layoutY="145.0">
+               <image>
+                  <Image url="@../images/panels/leaderboard_hud.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="player2_leaderboard" layoutX="541.0" layoutY="260.0" translateY="80.0">
+               <children>
+                  <ImageView fitHeight="34.0" fitWidth="39.0" layoutY="4.0">
+                     <image>
+                        <Image url="@../images/characters/small/character_small_red.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="player2_leaderboard_name" fill="#461700" layoutX="75.0" layoutY="30.55999755859375" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2">
+                     <font>
+                        <Font name="Songti SC Black" size="24.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.51" />
+                     </effect>
+                  </Text>
+                  <Text fill="#461700" layoutX="275.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 Wins" textAlignment="RIGHT" wrappingWidth="89.82422935263594">
+                     <font>
+                        <Font name="Songti SC Black" size="24.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.51" />
+                     </effect>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="player3_leaderboard" layoutX="546.0" layoutY="260.0" translateY="160.0">
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="33.0" layoutY="2.0">
+                     <image>
+                        <Image url="@../images/characters/small/character_small_orange.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="player3_leaderboard_name" fill="#461700" layoutX="70.0" layoutY="30.55999755859375" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 3">
+                     <font>
+                        <Font name="Songti SC Black" size="24.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.51" />
+                     </effect>
+                  </Text>
+                  <Text fill="#461700" layoutX="270.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 Wins" textAlignment="RIGHT" wrappingWidth="89.82422935263594">
+                     <font>
+                        <Font name="Songti SC Black" size="24.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.51" />
+                     </effect>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="player4_leaderboard" layoutX="542.0" layoutY="260.0" translateY="240.0">
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="37.0" layoutY="3.0">
+                     <image>
+                        <Image url="@../images/characters/small/character_small_green.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="player4_leaderboard_name" fill="#461700" layoutX="75.0" layoutY="31.55999755859375" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 4">
+                     <font>
+                        <Font name="Songti SC Black" size="24.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.51" />
+                     </effect>
+                  </Text>
+                  <Text fill="#461700" layoutX="274.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 Wins" textAlignment="RIGHT" wrappingWidth="89.82422935263594">
+                     <font>
+                        <Font name="Songti SC Black" size="24.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.51" />
+                     </effect>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="player1_leaderboard" layoutX="538.0" layoutY="260.0">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="42.0">
+                     <image>
+                        <Image url="@../images/characters/small/character_small_blue.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="player1_leaderboard_name" fill="#461700" layoutX="79.0" layoutY="31.55999755859375" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1">
+                     <font>
+                        <Font name="Songti SC Black" size="24.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.51" />
+                     </effect>
+                  </Text>
+                  <Text fill="#461700" layoutX="278.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 Wins" textAlignment="RIGHT" wrappingWidth="89.82422935263594">
+                     <font>
+                        <Font name="Songti SC Black" size="24.0" />
+                     </font>
+                     <effect>
+                        <Glow level="0.51" />
+                     </effect>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Button layoutX="1142.0" layoutY="11.0" mnemonicParsing="false" onAction="#settings" prefHeight="87.0" prefWidth="82.0" style="-fx-background-color: transparent;" text=" " textFill="WHITE">
+         <font>
+            <Font name="Songti TC Bold" size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="40.0">
+               <image>
+                  <Image url="@../images/symbols/settings.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane fx:id="settings" prefHeight="704.0" prefWidth="1283.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="720.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" width="1283.0" />
+            <ImageView fitHeight="608.0" fitWidth="604.0" layoutX="349.0" layoutY="-3.0">
+               <image>
+                  <Image url="@../images/panels/menu.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="453.0" layoutX="421.0" layoutY="474.0">
+               <image>
+                  <Image url="@../images/buttons/cancel.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="444.0" layoutY="474.0" mnemonicParsing="false" onAction="#exit_lobby" prefHeight="55.0" prefWidth="406.0" style="-fx-background-color: none;" text="Exit Lobby" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Songti SC Regular" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="54.0" fitWidth="282.0" layoutX="507.0" layoutY="614.0">
+               <image>
+                  <Image url="@../images/buttons/confirm.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="511.0" layoutY="613.0" mnemonicParsing="false" onAction="#back" prefHeight="55.0" prefWidth="271.0" style="-fx-background-color: none;" text="Accept and Continue" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Songti SC Regular" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fill="WHITE" layoutX="465.0" layoutY="266.0" stroke="#bf7403" strokeType="OUTSIDE" strokeWidth="0.0" text="Music" wrappingWidth="138.46063232421875">
+               <font>
+                  <Font name="Songti SC Black" size="32.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="466.0" layoutY="373.0" stroke="#bf7403" strokeType="OUTSIDE" strokeWidth="0.0" text="Sound" wrappingWidth="138.46063232421875">
+               <font>
+                  <Font name="Songti SC Black" size="32.0" />
+               </font>
+            </Text>
+            <Slider fx:id="musicSlider" layoutX="592.0" layoutY="247.0" prefHeight="16.0" prefWidth="229.0" />
+            <Slider fx:id="soundSlider" layoutX="591.0" layoutY="356.0" prefHeight="16.0" prefWidth="229.0" />
+            <CheckBox fx:id="musicMuteBox" layoutX="796.0" layoutY="283.0" mnemonicParsing="false" />
+            <Text fill="WHITE" layoutX="681.0" layoutY="300.0" stroke="#bf7403" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="Mute Music?" wrappingWidth="99.4053955078125">
+               <font>
+                  <Font name="Songti SC Black" size="18.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="soundMuteBox" layoutX="797.0" layoutY="392.0" mnemonicParsing="false" />
+            <Text fill="WHITE" layoutX="678.0" layoutY="408.0" stroke="#bf7403" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="Mute Sound?" wrappingWidth="99.26477425461155">
+               <font>
+                  <Font name="Songti SC Black" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="529.0" layoutY="182.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Settings">
+               <font>
+                  <Font name="Songti SC Black" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="loadingPane" visible="false">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1283.0" mouseTransparent="true">
+               <image>
+                  <Image url="@../images/backgrounds/lobby_background.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="204.0" fitWidth="512.0" layoutX="385.0" layoutY="271.0">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="585.0" layoutY="410.0" prefHeight="128.0" prefWidth="160.0" text="loading..." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Songti SC Black" size="40.0" />
+               </font>
+               <effect>
+                  <DropShadow height="100.0" offsetX="10.0" radius="49.5" spread="0.5" width="100.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

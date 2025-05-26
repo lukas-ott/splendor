@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="525.0" prefWidth="1081.0" style="-fx-pref-width: 1280; -fx-max-width: 1280; -fx-pref-height: 720; -fx-max-height: 720;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.spl12.client.application.RegisterScreenController">
+    <children>
+        <Pane maxHeight="543.0" maxWidth="1147.0" prefHeight="0.0" prefWidth="0.0" style="-fx-max-width: 540; -fx-max-height: 360;">
+            <children>
+                <ImageView fitHeight="720.0" fitWidth="1283.0" onKeyPressed="#confirm">
+                    <image>
+                        <Image url="@../images/backgrounds/gems.png" />
+                    </image>
+                </ImageView>
+            <Text fill="WHITE" layoutX="815.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The age of magic is fading, but power still lies beneath the earth—in gemstones of rare beauty and hidden strength. As a rising merchant, you seek wealth, prestige, and the favor of nobles who shape the world. Rivals are many, and only the shrewdest will thrive. Will you rise to glory—or be forgotten in the glittering dust of history?" textAlignment="RIGHT" wrappingWidth="395.179434864801">
+               <font>
+                  <Font name="Songti SC Light" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="291.0" layoutY="697.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group 12: Jan Walter, Leon Kürsch, Enrico Naumann, Leonardo Melodia, Noyan Morali, Lukas Ott" textAlignment="RIGHT" wrappingWidth="842.9071655273438">
+               <font>
+                  <Font name="Songti SC Light" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="316.0" fitWidth="362.0" layoutX="844.0" layoutY="290.0">
+               <image>
+                  <Image url="@../images/panels/papyrus.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="93.0" fitWidth="530.0" x="64.0" y="352.0">
+               <image>
+                  <Image url="@../images/buttons/default.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="526.0" layoutX="-2.0" x="66.0" y="454.0">
+               <image>
+                  <Image url="@../images/buttons/confirm.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="78.0" layoutY="348.0" maxHeight="104.0" maxWidth="500.0" mnemonicParsing="false" onAction="#handleLogin" pickOnBounds="true" prefHeight="100.0" prefWidth="500.0" style="-fx-background-color: transparent;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Songti SC Black" size="42.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="75.0" layoutY="447.0" maxHeight="104.0" maxWidth="500.0" mnemonicParsing="false" onAction="#back" pickOnBounds="true" prefHeight="100.0" prefWidth="500.0" style="-fx-background-color: transparent;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="Songti SC Black" size="42.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="usernameField" layoutX="883.0" layoutY="348.0" prefHeight="26.0" prefWidth="296.0" promptText="Username">
+               <font>
+                  <Font name="Songti SC Regular" size="13.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordField" layoutX="883.0" layoutY="418.0" prefHeight="26.0" prefWidth="297.0" promptText="Password">
+               <font>
+                  <Font name="Songti SC Regular" size="13.0" />
+               </font>
+            </PasswordField>
+            <Text fill="WHITE" layoutX="716.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your username:" textAlignment="RIGHT" wrappingWidth="395.179434864801">
+               <font>
+                  <Font name="Songti SC Light" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="712.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your password:" textAlignment="RIGHT" wrappingWidth="395.179434864801">
+               <font>
+                  <Font name="Songti SC Light" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="811.0" layoutY="634.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Press Enter to continue)" textAlignment="RIGHT" wrappingWidth="395.179434864801">
+               <font>
+                  <Font name="Songti SC Light" size="13.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="confirmPasswordField" layoutX="883.0" layoutY="488.0" prefHeight="26.0" prefWidth="297.0" promptText="Confirm Password">
+               <font>
+                  <Font name="Songti SC Regular" size="13.0" />
+               </font>
+            </PasswordField>
+            <Text fill="WHITE" layoutX="711.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your password:" textAlignment="RIGHT" wrappingWidth="395.179434864801">
+               <font>
+                  <Font name="Songti SC Light" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="36.0" fitWidth="141.0" layoutX="1039.0" layoutY="551.0">
+               <image>
+                  <Image url="@../images/buttons/confirm.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="1041.0" layoutY="543.0" maxHeight="104.0" maxWidth="500.0" mnemonicParsing="false" onAction="#confirm" pickOnBounds="true" prefHeight="53.0" prefWidth="137.0" style="-fx-background-color: transparent;" text="Confirm" textFill="WHITE">
+               <font>
+                  <Font name="Songti SC Black" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="ageField" layoutX="883.0" layoutY="553.0" prefHeight="29.0" prefWidth="143.0" promptText="Age">
+               <font>
+                  <Font name="Songti SC Regular" size="13.0" />
+               </font>
+            </TextField>
+            <Text fill="WHITE" layoutX="736.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Enter your age:" textAlignment="RIGHT" wrappingWidth="271.57939824370726">
+               <font>
+                  <Font name="Songti SC Light" size="20.0" />
+               </font>
+            </Text>
+            </children>
+        </Pane>
+      <ImageView fitHeight="233.0" fitWidth="591.0" layoutX="62.0" layoutY="86.0">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

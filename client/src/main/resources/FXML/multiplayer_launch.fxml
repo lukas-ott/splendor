@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="525.0" prefWidth="1081.0" style="-fx-pref-width: 1280; -fx-max-width: 1280; -fx-pref-height: 720; -fx-max-height: 720;" xmlns="http://javafx.com/javafx/21.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.spl12.client.application.MultiplayerLaunchScreenController">
+    <children>
+        <ImageView fitHeight="720.0" fitWidth="1283.0" mouseTransparent="true">
+            <image>
+                <Image url="@../images/backgrounds/hallway.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="189.0" layoutY="307.0" prefHeight="48.0" prefWidth="313.0" text="Singleplayer" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="Songti SC Black" size="32.0" />
+            </font>
+            <effect>
+                <DropShadow height="100.0" offsetX="10.0" radius="49.5" spread="0.5" width="100.0" />
+            </effect>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Label>
+        <Button fx:id="nametag" alignment="CENTER" layoutX="51.0" layoutY="16.0" mnemonicParsing="false" onAction="#profile" style="-fx-background-color: transparent;" text="Player Button" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="51.0" fitWidth="51.0">
+                    <image>
+                        <Image url="@../images/symbols/person.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="Songti SC Light" size="28.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+      <ImageView fitHeight="41.0" fitWidth="323.0" layoutX="190.0" layoutY="531.0">
+         <image>
+            <Image url="@../images/buttons/default.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="105.0" layoutX="942.0" layoutY="390.0">
+         <image>
+            <Image url="@../images/buttons/default.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="190.0" layoutY="340.0" prefHeight="192.0" prefWidth="462.0" text="Will you hone your skills in solitude, facing silent but relentless foes—merchants of metal and code, whose minds were forged for challenge and cunning? In this path, every move is yours alone, every victory hard-earned against the quiet will of the machine." textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Songti SC Regular" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow height="100.0" offsetX="10.0" radius="49.5" spread="0.5" width="100.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label layoutX="702.0" layoutY="356.0" prefHeight="37.0" prefWidth="202.0" text="Join an existing Lobby;" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Songti SC Regular" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow height="100.0" offsetX="10.0" radius="49.5" spread="0.5" width="100.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label layoutX="698.0" layoutY="307.0" prefHeight="48.0" prefWidth="313.0" text="Multiplayer" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Songti SC Black" size="32.0" />
+         </font>
+         <effect>
+            <DropShadow height="100.0" offsetX="10.0" radius="49.5" spread="0.5" width="100.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label layoutX="188.0" layoutY="138.0" prefHeight="128.0" prefWidth="691.0" text="Every Adventure starts with a choice..." textFill="#fcff00" wrapText="true">
+         <font>
+            <Font name="Songti SC Black" size="40.0" />
+         </font>
+         <effect>
+            <DropShadow height="100.0" offsetX="10.0" radius="49.5" spread="0.5" width="100.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+        <Button fx:id="singleplayerButton" layoutX="187.0" layoutY="530.0" maxHeight="112.0" maxWidth="500.0" mnemonicParsing="false" onAction="#goToSingleplayerLobby" pickOnBounds="true" prefHeight="0.0" prefWidth="325.0" style="-fx-background-color: transparent;" text="Start your Singleplayer Adventure" textFill="WHITE">
+            <font>
+                <Font name="Songti SC Black" size="20.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <TextField fx:id="sessionIdInput" layoutX="701.0" layoutY="393.0" prefHeight="29.0" prefWidth="234.0" promptText="Enter Lobby Code" style="-fx-border-radius: 0;">
+         <font>
+            <Font name="Songti SC Regular" size="16.0" />
+         </font>
+      </TextField>
+      <Line endX="243.423095703125" layoutX="804.0" layoutY="447.0" startX="-100.0" stroke="WHITE" />
+      <ImageView fitHeight="41.0" fitWidth="351.0" layoutX="701.0" layoutY="462.0">
+         <image>
+            <Image url="@../images/buttons/default.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="153.0" layoutX="896.0" layoutY="533.0">
+         <image>
+            <Image url="@../images/buttons/cancel.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="899.0" layoutY="531.0" maxHeight="112.0" maxWidth="500.0" mnemonicParsing="false" onAction="#back" pickOnBounds="true" prefHeight="42.0" prefWidth="148.0" style="-fx-background-color: transparent;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Songti SC Black" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="943.0" layoutY="390.0" maxHeight="112.0" maxWidth="500.0" mnemonicParsing="false" onAction="#joinLobby" pickOnBounds="true" prefHeight="42.0" prefWidth="105.0" style="-fx-background-color: transparent;" text="JOIN" textFill="WHITE">
+         <font>
+            <Font name="Songti SC Black" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="704.0" layoutY="462.0" maxHeight="112.0" maxWidth="500.0" mnemonicParsing="false" onAction="#hostLobby" pickOnBounds="true" prefHeight="42.0" prefWidth="339.0" style="-fx-background-color: transparent;" text="Start a new Lobby" textFill="WHITE">
+         <font>
+            <Font name="Songti SC Black" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1142.0" layoutY="11.0" mnemonicParsing="false" onAction="#settings" prefHeight="87.0" prefWidth="82.0" style="-fx-background-color: transparent;" text=" " textFill="WHITE">
+         <font>
+            <Font name="Songti TC Bold" size="40.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="40.0">
+               <image>
+                  <Image url="@../images/symbols/settings.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>

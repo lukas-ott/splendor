@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="525.0" prefWidth="1081.0" xmlns="http://javafx.com/javafx/21.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.spl12.ai_client.application.LobbyController">
+   <children>
+      <ImageView fitHeight="723.0" fitWidth="1281.0" layoutX="-1.0" layoutY="-1.0">
+         <image>
+            <Image url="@../images/backgrounds/hallway.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="21.0" layoutY="20.0">
+         <image>
+            <Image url="@../images/symbols/person.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+
+      <ImageView fx:id="logoutImage" fitHeight="45.0" fitWidth="45.0" layoutX="1170.0" layoutY="22.0">
+         <image>
+            <Image url="@../images/buttons/logout.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+
+      <Label fx:id="nametag" layoutX="87.0" layoutY="14.0" prefHeight="63.0" prefWidth="493.0" text="ai client name" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Songti SC Regular" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow height="100.0" offsetX="10.0" radius="49.5" spread="0.5" width="100.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+
+      <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" layoutX="308.0" layoutY="283.0" prefHeight="128.0" prefWidth="691.0" text="Loading..." textFill="#fcff00" wrapText="true">
+         <font>
+            <Font name="Songti SC Black" size="43.0" />
+         </font>
+         <effect>
+            <DropShadow height="100.0" offsetX="10.0" radius="49.5" spread="0.5" width="100.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="950.0" layoutY="17.0" prefHeight="58.0" prefWidth="197.0" text="Leave Lobby" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Songti SC Regular" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow height="100.0" offsetX="10.0" radius="49.5" spread="0.5" width="100.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+
+      <Button layoutX="1161.0" layoutY="16.0" onAction="#handleLogout" prefHeight="58.0" prefWidth="63.0" style="-fx-background-color: transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+
+
+   </children>
+</AnchorPane>

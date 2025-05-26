@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="525.0" prefWidth="1081.0" style="-fx-pref-width: 1280; -fx-max-width: 1280; -fx-pref-height: 720; -fx-max-height: 720;" xmlns="http://javafx.com/javafx/21.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.spl12.client.application.SettingsScreenController">
+            <children>
+                <ImageView fitHeight="720.0" fitWidth="1283.0">
+                    <image>
+                        <Image url="@../images/backgrounds/hallway.png" />
+                    </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+                </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="200.0" layoutX="539.0" layoutY="590.0">
+         <image>
+            <Image url="@../images/buttons/default.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-22.0" layoutY="3.0">
+         <children>
+            <Pane layoutY="24.0">
+               <children>
+                  <Pane layoutY="59.0" prefHeight="433.0" prefWidth="885.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <Pane layoutX="248.0" layoutY="36.0" prefHeight="265.0" prefWidth="386.0">
+                           <children>
+                              <Pane layoutX="106.0" layoutY="-87.0">
+                                 <children>
+                                    <ImageView fitHeight="582.0" fitWidth="664.0" layoutX="-21.0" layoutY="-40.0">
+                                       <image>
+                                          <Image url="@../images/panels/menu.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Text fill="WHITE" layoutX="197.0" layoutY="126.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Settings">
+                                       <font>
+                                          <Font name="Songti SC Black" size="40.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="132.0" layoutY="207.0" stroke="#bf7403" strokeType="OUTSIDE" strokeWidth="0.0" text="Music" wrappingWidth="138.46063232421875">
+                                       <font>
+                                          <Font name="Songti SC Black" size="32.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="133.0" layoutY="314.0" stroke="#bf7403" strokeType="OUTSIDE" strokeWidth="0.0" text="Sound" wrappingWidth="138.46063232421875">
+                                       <font>
+                                          <Font name="Songti SC Black" size="32.0" />
+                                       </font>
+                                    </Text>
+                                    <Slider fx:id="musicSlider" layoutX="259.0" layoutY="188.0" prefHeight="16.0" prefWidth="229.0" />
+                                    <Slider fx:id="soundSlider" layoutX="258.0" layoutY="297.0" prefHeight="16.0" prefWidth="229.0" />
+                                    <CheckBox fx:id="musicMuteBox" layoutX="463.0" layoutY="224.0" mnemonicParsing="false" />
+                                    <Text fill="WHITE" layoutX="348.0" layoutY="241.0" stroke="#bf7403" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="Mute Music?" wrappingWidth="99.4053955078125">
+                                       <font>
+                                          <Font name="Songti SC Black" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <CheckBox fx:id="soundMuteBox" layoutX="464.0" layoutY="333.0" mnemonicParsing="false" />
+                                    <Text fill="WHITE" layoutX="345.0" layoutY="349.0" stroke="#bf7403" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="Mute Sound?" wrappingWidth="99.26477425461155">
+                                       <font>
+                                          <Font name="Songti SC Black" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="51.0" fitWidth="287.0" layoutX="122.0" layoutY="394.0">
+                                       <image>
+                                          <Image url="@../images/buttons/default.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button layoutX="128.0" layoutY="393.0" mnemonicParsing="false" onAction="#profile" prefHeight="46.0" prefWidth="275.0" style="-fx-background-color: transparent;" text="Profile Settings" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Songti SC Regular" size="25.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <ImageView fx:id="logout" fitHeight="49.0" fitWidth="95.0" layoutX="410.0" layoutY="395.0">
+                                       <image>
+                                          <Image url="@../images/buttons/cancel_short.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button layoutX="402.0" layoutY="389.0" mnemonicParsing="false" onAction="#logout" prefHeight="60.0" prefWidth="107.0" style="-fx-background-color: transparent;">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="28.0">
+                                             <image>
+                                                <Image url="@../images/symbols/logout.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+                <Button layoutX="549.0" layoutY="582.0" mnemonicParsing="false" onAction="#back" prefHeight="78.0" prefWidth="180.0" style="-fx-background-color: transparent;" text="Back" textFill="WHITE">
+                    <font>
+                        <Font name="Songti SC Black" size="28.0" />
+                    </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+                </Button>
+            </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
