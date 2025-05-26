@@ -10,8 +10,17 @@ This project is the board game "Splendor" developed for the course "Software Eng
 - Jan Walter: jan.walter@students.uni-mannheim.de
 - Lukas Ott: lukas.ott@students.uni-mannheim.de
 
+## Requirements
+1. JDK 21 is installed.
+2. Maven is installed (to compile jars)
+3. If on Windows or Linus, javafx.lib is present and unzipped.
+
 ## Installation
 1. Unzip javafx_lib.zip - The resulting folder must be located at the same location the zip is located. The resulting folder must have the same name (javafx_lib) and contents (4 folders: linux_x64, mac_aarch64, mac_x64 and win_x64) as the zip
+2. Run
+```
+mvn clean install
+```
 
 ## Running the jars
 ### Start the server (all OSs)
